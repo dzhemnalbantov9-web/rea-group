@@ -1620,7 +1620,7 @@ const liveProducts = useMemo(() => {
 
           <div className="hero-visual" aria-hidden="true">
             <img
-              src="/rea-hero-new.png"
+              src="/banners/rea-group-banner.png"
               alt=""
               className="hero-visual-image"
             />
@@ -2223,6 +2223,8 @@ const liveProducts = useMemo(() => {
     </main>
   );
 }
+
+
 
 
 
