@@ -268,46 +268,6 @@ const productPhotos = (prefix: string, count: number): string[] =>
 
 const newMachines: Product[] = [
   {
-    id: 101,
-    name: "Минибагер TRAKO – тъмен корпус",
-    category: "Строителна и земеделска техника",
-    description: "Верижен минибагер. Точният модел и техническите характеристики са при запитване.",
-    photos: productPhotos("new-machines/mini-excavator-dark/mini-excavator-dark", 3),
-    price_on_request: true,
-  },
-  {
-    id: 102,
-    name: "Минибагер TRAKO – оранжев корпус",
-    category: "Строителна и земеделска техника",
-    description: "Компактен верижен минибагер. Допълнителна информация при запитване.",
-    photos: productPhotos("new-machines/mini-excavator-orange/mini-excavator-orange", 2),
-    price_on_request: true,
-  },
-  {
-    id: 103,
-    name: "Минибагер TRAKO – жълта стрела",
-    category: "Строителна и земеделска техника",
-    description: "Минибагер за изкопни работи. Точният модел се уточнява.",
-    photos: productPhotos("new-machines/mini-excavator-yellow/mini-excavator-yellow", 1),
-    price_on_request: true,
-  },
-  {
-    id: 104,
-    name: "Компактен минибагер TRAKO",
-    category: "Строителна и земеделска техника",
-    description: "Компактен верижен минибагер. Характеристики при запитване.",
-    photos: productPhotos("new-machines/mini-excavator-compact/mini-excavator-compact", 3),
-    price_on_request: true,
-  },
-  {
-    id: 105,
-    name: "Компактен трактор TRAKO",
-    category: "Строителна и земеделска техника",
-    description: "Компактен колесен трактор. Оборудване, мощност и модел при запитване.",
-    photos: productPhotos("new-machines/tractor/tractor", 5),
-    price_on_request: true,
-  },
-  {
     id: 106,
     name: "Челен товарач TRAKO",
     category: "Строителна и земеделска техника",
@@ -2223,6 +2183,7 @@ const liveProducts = useMemo(() => {
     </main>
   );
 }
+
 
 
 
