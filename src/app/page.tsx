@@ -1270,9 +1270,11 @@ const liveProducts = useMemo(() => {
 
   const newMachineIds = new Set(newMachines.map((machine) => machine.id));
 
+  const removedMachineIds = new Set([101, 102, 103, 104, 105]);
+
   const existingProducts = remainingProducts.filter(
     (product) =>
-      !newMachineIds.has(product.id) &&
+      !removedMachineIds.has(product.id) && !newMachineIds.has(product.id) &&
       !newMachines.some((machine) => machine.name === product.name)
   );
 
@@ -2183,6 +2185,7 @@ const liveProducts = useMemo(() => {
     </main>
   );
 }
+
 
 
 
