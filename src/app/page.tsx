@@ -268,14 +268,6 @@ const productPhotos = (prefix: string, count: number): string[] =>
 
 const newMachines: Product[] = [
   {
-    id: 106,
-    name: "Челен товарач TRAKO",
-    category: "Строителна и земеделска техника",
-    description: "Колесен челен товарач с предна кофа. Технически параметри при запитване.",
-    photos: productPhotos("new-machines/wheel-loader/wheel-loader", 2),
-    price_on_request: true,
-  },
-  {
     id: 107,
     name: "Мобилна къща",
     category: "Мобилни къщи и контейнери",
@@ -1270,7 +1262,7 @@ const liveProducts = useMemo(() => {
 
   const newMachineIds = new Set(newMachines.map((machine) => machine.id));
 
-  const removedMachineIds = new Set([101, 102, 103, 104, 105]);
+  const removedMachineIds = new Set([101, 102, 103, 104, 105, 106]);
 
   const existingProducts = remainingProducts.filter(
     (product) =>
@@ -2185,6 +2177,7 @@ const liveProducts = useMemo(() => {
     </main>
   );
 }
+
 
 
 
