@@ -1266,7 +1266,10 @@ const liveProducts = useMemo(() => {
 
   const existingProducts = remainingProducts.filter(
     (product) =>
-      !removedMachineIds.has(product.id) && !newMachineIds.has(product.id) &&
+      !removedMachineIds.has(product.id) &&
+      !/TRAKO/i.test(product.name) &&
+      !/трактор|минибагер|траκο|τρακτέρ|μίνι εκσκαφέας|εμπρόσθιος φορτωτής/i.test(product.name) &&
+      !newMachineIds.has(product.id) &&
       !newMachines.some((machine) => machine.name === product.name)
   );
 
@@ -2177,6 +2180,7 @@ const liveProducts = useMemo(() => {
     </main>
   );
 }
+
 
 
 
