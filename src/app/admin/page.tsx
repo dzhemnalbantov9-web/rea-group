@@ -207,7 +207,8 @@ export default function AdminPage() {
         } else {
           setAuthorized(Boolean(admin));
         }
-      } catch {
+      } catch (err) {
+        console.error("REA GROUP ADMIN AUTH ERROR:", err);
         if (active) {
           setAccessError("Неуспешна проверка на достъпа.");
         }
