@@ -1,4 +1,4 @@
-
+﻿
 "use client";
 
 import { useState } from "react";
@@ -147,7 +147,16 @@ export default function AdminLoginPage() {
           </button>
         </form>
 
-        <p style={styles.footer}>
+        <p style={{ textAlign: "center", marginTop: 22 }}>
+  <a
+    href="/admin/forgot-password"
+    style={{ color: "#ff7777", fontSize: 14 }}
+  >
+    Забравена парола?
+  </a>
+</p>
+
+<p style={styles.footer}>
           TACH MACHINES © 2026
         </p>
       </div>
@@ -250,3 +259,4 @@ const styles: Record<string, CSSProperties> = {
     marginTop: 35,
   },
 };
+
